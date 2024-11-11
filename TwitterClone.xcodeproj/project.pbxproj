@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6332506A2CE1A5F4002C296C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 633250692CE1A5F4002C296C /* SDWebImage */; };
+		6332506C2CE1A5F4002C296C /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6332506B2CE1A5F4002C296C /* SDWebImageMapKit */; };
 		633C35C92CDEBF7E00A85C86 /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C35C82CDEBF7E00A85C86 /* TweetViewModel.swift */; };
 		633C35CB2CDEBFA400A85C86 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C35CA2CDEBFA400A85C86 /* ProfileHeaderViewModel.swift */; };
 		633C35CD2CDEBFC500A85C86 /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633C35CC2CDEBFC500A85C86 /* UploadTweetViewModel.swift */; };
@@ -128,6 +130,7 @@
 				63B40E702CC8A3A900A7FE4B /* FirebaseAnalytics in Frameworks */,
 				63B40E722CC8A3A900A7FE4B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				63B40E982CC8A3B100A7FE4B /* FirebaseMLModelDownloader in Frameworks */,
+				6332506A2CE1A5F4002C296C /* SDWebImage in Frameworks */,
 				63B40E8C2CC8A3AD00A7FE4B /* FirebaseFirestoreSwift in Frameworks */,
 				63B40E782CC8A3AA00A7FE4B /* FirebaseAppCheck in Frameworks */,
 				63B40E762CC8A3A900A7FE4B /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
@@ -136,6 +139,7 @@
 				63B40E802CC8A3AB00A7FE4B /* FirebaseCrashlytics in Frameworks */,
 				63B40EA02CC8A3B400A7FE4B /* FirebaseRemoteConfigSwift in Frameworks */,
 				63B40E922CC8A3AF00A7FE4B /* FirebaseInAppMessaging-Beta in Frameworks */,
+				6332506C2CE1A5F4002C296C /* SDWebImageMapKit in Frameworks */,
 				63B40E842CC8A3AB00A7FE4B /* FirebaseDatabaseSwift in Frameworks */,
 				63B40E8E2CC8A3AD00A7FE4B /* FirebaseFunctions in Frameworks */,
 				63B40EA42CC8A3B500A7FE4B /* FirebaseStorageCombine-Community in Frameworks */,
@@ -325,6 +329,8 @@
 				63B40EA12CC8A3B500A7FE4B /* FirebaseStorage */,
 				63B40EA32CC8A3B500A7FE4B /* FirebaseStorageCombine-Community */,
 				63B40EAE2CC8C2E400A7FE4B /* ActiveLabel */,
+				633250692CE1A5F4002C296C /* SDWebImage */,
+				6332506B2CE1A5F4002C296C /* SDWebImageMapKit */,
 			);
 			productName = TwitterClone;
 			productReference = 63B40E4D2CC89FC500A7FE4B /* TwitterClone.app */;
@@ -357,6 +363,7 @@
 			packageReferences = (
 				63B40E6E2CC8A3A900A7FE4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				63B40EAD2CC8C2E400A7FE4B /* XCRemoteSwiftPackageReference "ActiveLabel.swift" */,
+				633250682CE1A5F4002C296C /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 63B40E4E2CC89FC500A7FE4B /* Products */;
 			projectDirPath = "";
@@ -638,6 +645,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		633250682CE1A5F4002C296C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		63B40E6E2CC8A3A900A7FE4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -657,6 +672,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		633250692CE1A5F4002C296C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633250682CE1A5F4002C296C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		6332506B2CE1A5F4002C296C /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 633250682CE1A5F4002C296C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		63B40E6F2CC8A3A900A7FE4B /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 63B40E6E2CC8A3A900A7FE4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
